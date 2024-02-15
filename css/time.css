@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    color: black;
+    min-height: 100vh;
+}
+
+header {
+    padding: 26px 0 10px 26px;
+    display: flex;
+    gap: 10px;
+}
+
+a{
+    color: white;
+    font-weight: 600;
+    padding: 5px 15px;
+    font-size: 26px;
+    border: 1px solid white;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    text-decoration: none;
+}
+
+a:hover {
+    background-color: greenyellow;
+    color: black;
+    font-weight: 600;
+}
+
+.current-page {
+    background-color: gray;
+}
+
+.wrap {
+    display: flex;
+    min-height: 80vh;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    width: 400px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 35px;
+    border: 5px solid greenyellow;
+    border-radius: 50%;
+    background-color: ghostwhite;
+}
+
+.timer {
+    display: inline-flex;
+    margin-bottom: 17px;
+}
+
+h1 {
+    font-size: 80px;
+}
+
+input {
+    height: 35px;
+    width: 280px;
+    font-size: 17px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+input:focus {
+    outline: 2px solid black;
+    border: none;
+    background-color: aliceblue;
+    color: black;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+
+.ocult {
+    display: none;
+}
+
+.start, .stop, .pause{
+    width: 220px;
+    padding: 5px;
+    height: 44px;
+    background-color: greenyellow;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-size: 26px;
+    font-weight: 600;
+    text-align: center;
+    cursor: pointer;
+    margin-bottom: 5px;
+}
+
+.stop {
+    background-color: brown;
+    width: 105px;
+}
+
+.pause {
+    background-color: yellow;
+    width: 105px;
+}
+
+button:hover {
+    opacity: .8;
+    border: 3px solid black;
+}
+
+@media(max-width: 412px) {
+    main {
+        width: 350px;
+        height: 350px;
+    }
+}

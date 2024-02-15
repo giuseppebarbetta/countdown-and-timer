@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/time.css">
+    <title>Timer Js</title>
+</head>
+<body>
+    <header>
+        <p><a href="./index.html">Cronômetro</a></p>
+        <p><a href="./timer.html" class="current-page">Timer</a></p>
+    </header>
+    <section class="wrap">
+        <main>
+            <section class="timer">
+                <h1 class="minute">00</h1>
+                <h1>:</h1>
+                <h1 class="second">00</h1>
+            </section>
+            <input
+            type="number" 
+            name="time" 
+            id="time"
+            placeholder="Quantos minutos quer no timer?">
+            <section class="buttons">
+                <button class="start" onclick="start()">START</button>
+                <button class="pause" onclick="pause()">PAUSE</button>
+                <button class="stop" onclick="stop()">STOP</button>
+            </section>
+        </main>
+    </section>
+    <script src="./javaScript/timer.js"></script>
+</body>
+</html>
