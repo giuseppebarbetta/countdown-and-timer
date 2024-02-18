@@ -102,4 +102,9 @@ button:hover, button:active{
         width: 350px;
         height: 350px;
     }
+
+    button:hover, button:active{
+        opacity: 1;
+        border: 1px solid black;
+    }
 }
