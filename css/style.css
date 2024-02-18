@@ -69,6 +69,7 @@ h1 {
 }
 
 .start, .stop, .pause{
+    color:#000000;
     width: 220px;
     padding: 5px;
     height: 44px;
@@ -92,7 +93,7 @@ h1 {
     width: 105px;
 }
 
-button:hover {
+button:hover, button:active{
     opacity: .8;
     border: 3px solid black;
 }
