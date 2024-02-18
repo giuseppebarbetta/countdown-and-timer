@@ -70,14 +70,11 @@ h1 {
 
 .start, .stop, .pause{
     color:#000000;
-    width: 220px;
-    padding: 5px;
-    height: 44px;
+    padding: 5px 15px;
     background-color: greenyellow;
     border: 1px solid black;
     border-radius: 5px;
-    font-size: 26px;
-    font-weight: 600;
+    font-size: 44px;
     text-align: center;
     cursor: pointer;
     margin-bottom: 5px;
@@ -85,17 +82,19 @@ h1 {
 
 .stop {
     background-color: brown;
-    width: 105px;
 }
 
 .pause {
     background-color: yellow;
-    width: 105px;
 }
 
 button:hover, button:active{
     opacity: .8;
     border: 3px solid black;
+}
+
+.ocult {
+    display: none;
 }
 
 @media(max-width: 412px) {

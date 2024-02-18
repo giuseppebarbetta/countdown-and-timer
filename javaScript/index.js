@@ -1,9 +1,12 @@
+const startBtn = document.querySelector(".start")
+
 let hourShower = document.querySelector(".hour")
 let minuteShower = document.querySelector(".minute")
 let secondShower = document.querySelector(".second")
 let cron = ""
 
 function start ()  {
+    startBtn.classList.add("ocult")
     cron = setInterval ( function () {
         secondShower.innerText++
 
@@ -24,8 +27,10 @@ function stop () {
     secondShower.innerText = "00"
     minuteShower.innerText = "00"
     hourShower.innerText = "00"
+    startBtn.classList.remove("ocult")
 }
 
 function pause () {
     clearInterval(cron)
+    startBtn.classList.remove("ocult")
 }

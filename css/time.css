@@ -97,14 +97,11 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 
 .start, .stop, .pause{
-    width: 220px;
     padding: 5px;
-    height: 44px;
     background-color: greenyellow;
     border: 1px solid black;
     border-radius: 5px;
-    font-size: 26px;
-    font-weight: 600;
+    font-size: 44px;
     text-align: center;
     cursor: pointer;
     margin-bottom: 5px;
@@ -112,12 +109,14 @@ input[type="number"]::-webkit-outer-spin-button {
 
 .stop {
     background-color: brown;
-    width: 105px;
 }
 
 .pause {
     background-color: yellow;
-    width: 105px;
+}
+
+.ocult {
+    display: none;
 }
 
 button:hover {
