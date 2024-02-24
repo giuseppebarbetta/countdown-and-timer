@@ -104,15 +104,16 @@ button:hover, button:active{
         width: 350px;
         height: 350px;
     }
-
-    /* .start, .stop, .pause{
+    h1 {
+        font-size: 62px;
+    }
+    .start, .stop, .pause{
         width: 50px;
         height: 80px;
         padding: 0;
         font-size: 35px;
         margin-bottom: 0;
-    } */
-
+    }
     button:hover, button:active{
         opacity: 1;
         border: 1px solid black;

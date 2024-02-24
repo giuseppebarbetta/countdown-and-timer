@@ -27,6 +27,7 @@ function start ()  {
 
     } else if (secondShower.innerText != "00" && minuteShower.innerText != "00"){
         cron = setInterval (  workingTimer, 1000)
+        startBtn.classList.add("ocult")
     } else {
         minuteShower.innerText = (parseInt(inputValue.value - 1).toString().padStart(2, '0'))
         inputValue.classList.add("ocult")
