@@ -129,7 +129,9 @@ button:hover {
     }
     .start, .stop, .pause{
         width: 50px;
-        height: 17px;
+        height: 50px;
+        padding: 0;
+        margin-bottom: 0;
     }
     button:hover {
         opacity: 1;
