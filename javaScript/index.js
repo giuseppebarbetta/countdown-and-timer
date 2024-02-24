@@ -8,16 +8,18 @@ let cron = ""
 function start ()  {
     startBtn.classList.add("ocult")
     cron = setInterval ( function () {
-        secondShower.innerText++
+        
+        //secondShower.innerText++
+        secondShower.innerText = (parseInt(secondShower.innerText) + 1).toString().padStart(2, '0')
 
         if (parseInt(secondShower.innerText) == 60) {
             secondShower.innerText = "00";
-            minuteShower.innerText++
+            minuteShower.innerText = (parseInt(minuteShower.innerText) + 1).toString().padStart(2, '0')
         };
     
         if (parseInt(minuteShower.innerText) == 60) {
             minuteShower.innerText = "00"
-            hourShower.innerText++
+            hourShower.innerText = (parseInt(hourShower.innerText) + 1).toString().padStart(2, '0')
         }
     }, 1000)
 }
