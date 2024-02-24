@@ -118,7 +118,6 @@ button:hover, button:active{
         margin-bottom: 0;
     }
     button:hover, button:active{
-        opacity: 1;
-        border: 1px solid black;
+        pointer-events: none;
     }
 }
