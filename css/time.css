@@ -128,6 +128,9 @@ button:hover {
         width: 350px;
         height: 350px;
     }
+    .wrap {
+        min-height: 60vh;
+    }
     h1 {
         font-size: 62px;
     }
