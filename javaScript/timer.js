@@ -25,7 +25,7 @@ function start ()  {
     if(inputValue.value == "") {
         alert("Digite quanto tempo deseja no timer!")
 
-    } else if (secondShower.innerText != "00" && minuteShower.innerText != "00"){
+    } else if (secondShower.innerText != "00" || minuteShower.innerText != "00"){
         cron = setInterval (  workingTimer, 1000)
         startBtn.classList.add("ocult")
     } else {
