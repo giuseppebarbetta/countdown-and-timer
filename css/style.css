@@ -8,13 +8,15 @@
 body {
     background-color: black;
     color: black;
-    min-height: 100vh;
+    max-height: 100vh;
 }
 
 header {
     padding: 26px 0 10px 26px;
     display: flex;
+    align-self: baseline;
     gap: 10px;
+    min-height: 10vh;
 }
 
 a{
@@ -42,9 +44,9 @@ a:hover {
 
 .wrap {
     display: flex;
-    min-height: 80vh;
     justify-content: center;
     align-items: center;
+    min-height: 80vh;
 }
 
 main {
@@ -72,24 +74,13 @@ h1 {
 
 .start, .stop, .pause{
     color:#000000;
-    padding: 5px 15px;
-    background-color: greenyellow;
-    border: 1px solid black;
+    padding: .5px;
+    border: 3px solid transparent;
     border-radius: 5px;
-    font-size: 44px;
+    font-size: 53px;
     text-align: center;
     cursor: pointer;
-    margin-bottom: 5px;
 }
-
-.stop {
-    background-color: brown;
-}
-
-.pause {
-    background-color: yellow;
-}
-
 button:hover, button:active{
     opacity: .8;
     border: 3px solid black;
@@ -99,25 +90,24 @@ button:hover, button:active{
     display: none;
 }
 
-@media(max-width: 412px) {
+@media(max-width: 415px) {
     body {
         max-width: 100vh;
     }
     main {
         width: 325px;
         height: 325px;
+        align-content: center;
     }
     h1 {
         font-size: 62px;
     }
     .start, .stop, .pause{
-        width: 62px;
-        height: 62px;
-        padding: 0;
-        font-size: 35px;
-        margin-bottom: 0;
+        padding: .5;
+        font-size: 53px;
     }
     button:hover, button:active{
-        pointer-events: none;
+        border: none;
+        opacity: 1;
     }
 }

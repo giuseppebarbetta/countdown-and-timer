@@ -11,22 +11,24 @@
         <p><a href="./index.html" class="current-page">Cronômetro</a></p>
         <p><a href="./timer.html">Timer</a></p>
     </header>
-    <section class="wrap">
-        <main>
-            <section class="timer">
-                <h1 class="hour">00</h1>
-                <h1>:</h1>
-                <h1 class="minute">00</h1>
-                <h1>:</h1>
-                <h1 class="second">00</h1>
-            </section>
-            <section class="buttons">
-                <button class="start" onclick="start()">&#9199</button>
-                <button class="pause" onclick="pause()">&#9208</button>
-                <button class="stop" onclick="stop()">&#9209</button>
-            </section>
-        </main>
-    </section>
+    <div class="container">
+        <section class="wrap">
+            <main>
+                <section class="timer">
+                    <h1 class="hour">00</h1>
+                    <h1>:</h1>
+                    <h1 class="minute">00</h1>
+                    <h1>:</h1>
+                    <h1 class="second">00</h1>
+                </section>
+                <section class="buttons">
+                    <button class="start" onclick="start()">▶️</button>
+                    <button class="pause" onclick="pause()">⏸️</button>
+                    <button class="stop" onclick="stop()">⏹️</button>
+                </section>
+            </main>
+        </section>
+    </div>
     <script src="./javaScript/index.js"></script>
 </body>
 </html>
